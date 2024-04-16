@@ -114,7 +114,7 @@ xcopy "$(SolutionDir)SFML\dlls\x86\dependencies\" "$(OutDir)" /i /y /s</Command>
       <AdditionalIncludeDirectories>$(SolutionDir)SFML\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -156,7 +156,7 @@ xcopy "$(SolutionDir)SFML\dlls\x64\dependencies\" "$(OutDir)" /i /y /s</Command>
       <AdditionalIncludeDirectories>$(SolutionDir)SFML\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
