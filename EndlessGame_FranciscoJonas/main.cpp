@@ -7,10 +7,11 @@ void PlayerMovemment(sf::RectangleShape& rectangle);
 
 struct Player
 {
-	const float ACCELERATION;
+	const float ACCELERATION = 200.0f;
+	const float MAX_GRAVITY_VELOCITY = 200.0f;
 
 	sf::Vector2f position;
-	sf::Vector2f gravity;
+	float gravity = 100.0f;
 	sf::Vector2f velocity;
 
 };
@@ -27,7 +28,7 @@ int main()
 	rectangle.setOutlineThickness(20.f);
 	rectangle.setOutlineColor(sf::Color(250, 150, 100));
 	rectangle.setOrigin(-50, -350);
-	
+	Player player;
 
 
 	/*sf::Vector2f gravity(0, 10);                     
@@ -58,19 +59,8 @@ void PlayerMovemment(sf::RectangleShape& rectangle)
 
 	rectangle.setSize(sf::Vector2f(100.f, 100.f));
 	sf::Vector2f position = rectangle.getPosition();
-	sf::Vector2f gravity(0, 10);
-	sf::Vector2f userInput = position;
-	sf::Vector2f acceleration = gravity + userInput;
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-	{
-		rectangle.setPosition(position + sf::Vector2f(0.1, 0));
-	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-	{
-		rectangle.setPosition(position + sf::Vector2f(-0.1, 0));
-	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 	{
 		rectangle.setPosition(position + sf::Vector2f(0, -0.1));
 	}
@@ -80,3 +70,5 @@ void PlayerMovemment(sf::RectangleShape& rectangle)
 		rectangle.setOrigin(-50, -400);
 	}
 }
+
+void PLayerGravity (
