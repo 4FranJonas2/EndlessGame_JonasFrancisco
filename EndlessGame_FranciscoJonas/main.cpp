@@ -1,6 +1,12 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "Physics.h"
+
 using namespace std;
+const float maxY = 50.f;
+const sf::Vector2f gravity(0.f, 5.f);
+
+//https://stackoverflow.com/questions/20876494/how-can-i-set-gravity-using-this-code-sfml-c#comment31353305_20876494
 
 struct Player
 {
