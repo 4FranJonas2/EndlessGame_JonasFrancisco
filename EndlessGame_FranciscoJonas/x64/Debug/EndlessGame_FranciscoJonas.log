@@ -7,19 +7,4 @@
   C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\SFML\dlls\x64\dependencies\openal32.dll
   1 archivo(s) copiado(s)
   main.cpp
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(54,49): warning C4305: 'argumento': truncamiento de 'double' a 'T'
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(54,49): warning C4305:         with
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(54,49): warning C4305:         [
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(54,49): warning C4305:             T=float
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(54,49): warning C4305:         ]
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(58,50): warning C4305: 'argumento': truncamiento de 'double' a 'T'
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(58,50): warning C4305:         with
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(58,50): warning C4305:         [
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(58,50): warning C4305:             T=float
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(58,50): warning C4305:         ]
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(62,53): warning C4305: 'argumento': truncamiento de 'double' a 'T'
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(62,53): warning C4305:         with
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(62,53): warning C4305:         [
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(62,53): warning C4305:             T=float
-C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\main.cpp(62,53): warning C4305:         ]
   EndlessGame_FranciscoJonas.vcxproj -> C:\Users\Aula 1\Documents\GitHub\EndlessGame_JonasFrancisco\EndlessGame_FranciscoJonas\x64\Debug\EndlessGame_FranciscoJonas.exe

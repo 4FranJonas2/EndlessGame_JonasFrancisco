@@ -2,9 +2,6 @@
 #include <SFML/Graphics.hpp>
 using namespace std;
 
-void PlayerMovemment(sf::RectangleShape& rectangle);
-
-
 struct Player
 {
 	const float ACCELERATION = 200.0f;
@@ -15,11 +12,16 @@ struct Player
 	sf::Vector2f velocity;
 
 };
+void PlayerMovemment(sf::RectangleShape& rectangle, sf::Clock clock);
+
+// Player& player
 
 int main()
 {
 	//Me crea la ventana
 	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML EndlessGame Francisco Jonas");
+	window.setFramerateLimit(120u);
+	sf::Vector2f position;
 	//Crea un circulo
 	sf::RectangleShape rectangle(sf::Vector2f(100.f, 50.f));
 	rectangle.setSize(sf::Vector2f(100.f, 100.f));
@@ -37,38 +39,44 @@ int main()
 
 	while (window.isOpen())
 	{
+		sf::Clock clock;
 		sf::Event event;
+
 		while (window.pollEvent(event))
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
 
-		PlayerMovemment(rectangle);
+		PlayerMovemment(rectangle, clock);
 
 		window.clear();
 		window.draw(rectangle);
 		window.display();
 	}
-
 	return 0;
 }
 
-void PlayerMovemment(sf::RectangleShape& rectangle)
+void PlayerMovemment(sf::RectangleShape& rectangle, sf::Clock clock)
 {
+	float dt = clock.restart().asSeconds();
 
 	rectangle.setSize(sf::Vector2f(100.f, 100.f));
 	sf::Vector2f position = rectangle.getPosition();
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 	{
-		rectangle.setPosition(position + sf::Vector2f(0, -0.1));
+		rectangle.setPosition(position + sf::Vector2f(0, -5.0));
+		sf::Vector2f velocity(0.f, -5.0f);
+		position += velocity * dt;
 	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+	/*else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
 	{
 		rectangle.setSize(sf::Vector2f(100.f, 50.f));
 		rectangle.setOrigin(-50, -400);
-	}
+	}*/
+
+
 }
 
-void PLayerGravity (
+
