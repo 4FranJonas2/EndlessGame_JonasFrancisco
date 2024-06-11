@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-class Gravity 
+class Gravity
 {
 private:
 
@@ -11,6 +11,6 @@ private:
 public:
 
     Gravity(float x_pos, float y_pos) : position(x_pos, y_pos);
-    void Step();   
+    void Step();
     void Draw(sf::RenderWindow& window);
-}
+};
