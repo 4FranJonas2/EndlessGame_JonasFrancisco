@@ -3,6 +3,7 @@
 #include "Declarations.h"
 #include "Entity.h"
 
+//https://jsfiddle.net/LyM87/
 //https://gamedev.stackexchange.com/questions/29617/how-to-make-a-character-jump/29618#29618
 //https://stackoverflow.com/questions/20876494/how-can-i-set-gravity-using-this-code-sfml-c#comment31353305_20876494
 //Player& player
@@ -10,6 +11,8 @@ void PlayerMovemment(sf::RectangleShape& rectangle, sf::Clock clock);
 
 int main()
 {
+	
+
 	//Me crea la ventana
 	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML EndlessGame Francisco Jonas");
 	window.setFramerateLimit(120u);
@@ -68,6 +71,15 @@ void PlayerMovemment(sf::RectangleShape& rectangle, sf::Clock clock)
 	}*/
 
 
+}
+
+void StartJump()
+{
+	if (onGround)
+	{
+		velocityY = -12.0;
+		onGround = false;
+	}
 }
 
 

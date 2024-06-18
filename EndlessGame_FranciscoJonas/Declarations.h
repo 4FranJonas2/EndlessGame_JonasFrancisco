@@ -4,6 +4,9 @@
 using namespace std;
 const float maxY = 50.f;
 const sf::Vector2f gravity(0.f, 5.f);
+int velocityY = 0.0;
+int gravity = 0.5;
+int onGround = false;
 
 struct Player
 {
