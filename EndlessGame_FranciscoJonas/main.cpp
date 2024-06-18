@@ -1,29 +1,15 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Physics.h"
-
-using namespace std;
-const float maxY = 50.f;
-const sf::Vector2f gravity(0.f, 5.f);
+#include "Declarations.h"
+#include "Entity.h"
 
 //https://stackoverflow.com/questions/20876494/how-can-i-set-gravity-using-this-code-sfml-c#comment31353305_20876494
-
-struct Player
-{
-	const float ACCELERATION = 200.0f;
-	const float MAX_GRAVITY_VELOCITY = 200.0f;
-
-	sf::Vector2f position;
-	float gravity = 100.0f;
-	sf::Vector2f velocity;
-
-};
+//Player& player
 void PlayerMovemment(sf::RectangleShape& rectangle, sf::Clock clock);
-
-// Player& player
 
 int main()
 {
+
 	//Me crea la ventana
 	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML EndlessGame Francisco Jonas");
 	window.setFramerateLimit(120u);
@@ -37,7 +23,6 @@ int main()
 	rectangle.setOutlineColor(sf::Color(250, 150, 100));
 	rectangle.setOrigin(-50, -350);
 	Player player;
-
 
 	/*sf::Vector2f gravity(0, 10);                     
 	sf::Vector2f userInput = ...;                    

@@ -1,7 +1,7 @@
-#include "Physics.h"
+#include "Entity.h"
+#include "Declarations.h"
 
-
-Gravity::Gravity(float x_pos, float y_pos) : position (x_pos, y_pos) 
+Gravity::Gravity(float x_pos, float y_pos) : position(x_pos, y_pos)
 {
     m_shape.setSize(sf::Vector2f(100, 100));
     m_shape.setFillColor(sf::Color::Black);
